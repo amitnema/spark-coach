@@ -1,0 +1,19 @@
+language: java
+sudo: true
+install: true
+before_script:
+  - sudo sysctl -w vm.max_map_count=262144
+  
+addons:
+  sonarcloud:
+    organization: "amitnema-github"
+
+jdk:
+  - oraclejdk8
+
+script:
+  # JaCoCo is used to have code coverage, the agent has to be activated
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
+
+after_success:
+  - python <(curl -s https://raw.githubusercontent.com/TouK/sputnik-ci/master/sputnik-ci.py)

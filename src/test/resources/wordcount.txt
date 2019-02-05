@@ -1,0 +1,1 @@
+Apache Spark has all the credentials to become the next cool Big Data technology. Apache Spark is designed to work seamlessly with Hadoop or as a standalone application. The big advantage of Spark standalone is its ease of use and it is an ideal enviroment for testing propose.
