@@ -1,13 +1,13 @@
 package org.apn.spark.sql
 
 import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
-import org.apn.spark.TestBase
+import org.apn.spark.SparkTestNGBase
 import org.testng.annotations.Test
 
 /**
   * @author amit.nema
   */
-class WordCountTest extends TestBase[WordCountTest] {
+class WordCountTest extends SparkTestNGBase {
 
   @Test( dataProvider = "dpWordCount" ) def testCountWords(pathIn: String, word: String, count: Long) {
     WordCount.countWord( spark, pathIn ).createOrReplaceTempView( "count_words_df" )

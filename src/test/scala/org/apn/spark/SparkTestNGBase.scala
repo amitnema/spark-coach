@@ -6,26 +6,31 @@ import org.scalatest.Matchers
 import org.scalatest.testng.TestNGSuite
 import org.testng.annotations.{AfterClass, BeforeClass, DataProvider}
 
-import scala.reflect.runtime.universe.TypeTag
-
 /**
   * @author amit.nema
   */
-class TestBase[T](implicit tag: TypeTag[T]) extends TestNGSuite with Matchers with FileUtils {
+trait SparkTestNGBase extends TestNGSuite with Matchers with FileUtils {
+  thisSuite =>
 
-  protected final var spark: SparkSession = _
+  private final var _spark: SparkSession = _
 
   @BeforeClass def beforeClass() {
-    spark = SparkSession.builder( ).appName( tag.tpe.toString ).master( "local[*]" ).getOrCreate( )
+    _spark = SparkSession.builder( ).appName( getClass.getSimpleName ).master( "local[*]" ).getOrCreate( )
+    sparkConfig.foreach { case (k, v) => _spark.sparkContext.getConf.setIfMissing( k, v ) }
   }
 
   @AfterClass def afterClass() {
-    spark.stop
-    spark.close
+    if (_spark != null) {}
+    _spark.stop
+    _spark.close
+    _spark = null
   }
 
   @DataProvider def dpWordCount() = {
     Array( Array[Object]( getClass.getClassLoader.getResource( "wordcount.txt" ).getPath, "Spark", Long.box( 3 ) ) )
   }
 
+  def sparkConfig: Map[String, String] = Map.empty
+
+  def spark = _spark
 }

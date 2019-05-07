@@ -22,7 +22,8 @@ class WordCountTest extends WordSpec with EmbeddedKafka {
 
     "work1" in {
       EmbeddedKafka.start( )
-
+      publishStringMessageToKafka( "topic", "message01" )
+      println(">>"+consumeFirstStringMessageFrom( "topic" ))
       // ... code goes here
 
       EmbeddedKafka.stop( )

@@ -2,13 +2,13 @@ package org.apn.spark.dsl
 
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
-import org.apn.spark.TestBase
+import org.apn.spark.SparkTestNGBase
 import org.testng.annotations.Test
 
 /**
   * @author amit.nema
   */
-class WordCountTest extends TestBase[WordCountTest] {
+class WordCountTest extends SparkTestNGBase {
 
   @Test( dataProvider = "dpWordCount" ) def testCountWord(pathIn: String, word: String, count: Long) {
     val ds = WordCount.countWord( spark, pathIn )
@@ -29,7 +29,7 @@ class WordCountTest extends TestBase[WordCountTest] {
     spark.read
       //.option( "inferSchema", "true" )
       .schema( schema )
-      .csv( filterFileExtension( pathOut, ".csv" )( 0 ) )
+      .csv( filterFiles( pathOut, ".csv" )( 0 ) )
       .filter( $"word" === word )
       .select( $"count" )
       .collect( )( 0 )

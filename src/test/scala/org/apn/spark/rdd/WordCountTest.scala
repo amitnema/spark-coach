@@ -6,7 +6,7 @@ import org.testng.annotations.Test
 /**
   * @author amit.nema
   */
-class WordCountTest extends TestBase[WordCountTest] {
+class WordCountTest extends TestBase[ WordCountTest ] {
 
   @Test( dataProvider = "dpWordCount" ) def testCountWord(pathIn: String, word: String, count: Long) {
     val rdd = WordCount.countWord( spark.sparkContext, pathIn )
@@ -18,7 +18,7 @@ class WordCountTest extends TestBase[WordCountTest] {
     WordCount.countWordSave( spark.sparkContext, pathIn, pathOut )
 
     spark.sparkContext
-      .textFile( filterFileExtension( pathOut, "-00000" )( 0 ) )
+      .textFile( filterFiles( pathOut, "-00000" )( 0 ) )
       .map( _.stripPrefix( "(" ).stripSuffix( ")" ) )
       .map( _.split( ',' ) )
       .filter( _ ( 0 ).equals( word ) )
