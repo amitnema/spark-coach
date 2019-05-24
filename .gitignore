@@ -1,0 +1,14 @@
+target/
+test-output/
+.*
+*.iml
+*.ipr
+*.iws
+checkpoint
+derby.log
+dist/
+log/
+logs/
+out/
+warehouse/
+spark-warehouse/
