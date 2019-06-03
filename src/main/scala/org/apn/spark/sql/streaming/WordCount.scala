@@ -37,7 +37,9 @@ object WordCount {
         wordsCount.foreach ( x => println ( x.word, x.wc ) )
     }*/
 
-    //    countWordSave ( spark, bootstrapServers, subscribeType, topics, checkpointLocation, "spark-data" )
+    //countWordSave ( spark, bootstrapServers, subscribeType, topics, checkpointLocation, "spark-data" )
+    //spark.streams.awaitAnyTermination()
+
   }
 
   def countWordConsole(spark: SparkSession, bootstrapServers: String, subscribeType: String, topics: String, checkpointLocation: String, delim: String = StringUtils.SPACE): Unit = {
@@ -46,22 +48,8 @@ object WordCount {
     val query = countWord ( spark, bootstrapServers, subscribeType, topics, delim ).writeStream
       .outputMode ( Complete ( ) )
       .option ( "checkpointLocation", checkpointLocation )
+      .option ( "truncate", false )
       .format ( "console" )
-      .start ( )
-
-    query.awaitTermination ( )
-  }
-
-  def countWordBatch(spark: SparkSession, bootstrapServers: String, subscribeType: String, topics: String, checkpointLocation: String, delim: String = StringUtils.SPACE)(handler: WordCountHandler): Unit = {
-    import spark.implicits._
-
-    // Start running the query that sends the running counts to the handler
-    val query = countWord ( spark, bootstrapServers, subscribeType, topics, delim ).writeStream
-      .outputMode ( Complete ( ) )
-      .option ( "checkpointLocation", checkpointLocation )
-      .foreachBatch ( (batchDF: Dataset[ WordCount ], batchId: Long) => {
-        handler ( batchDF.sort ( $"word" ), batchId )
-      } )
       .start ( )
 
     query.awaitTermination ( )
@@ -78,23 +66,39 @@ object WordCount {
       .option ( subscribeType, topics )
       .load ( )
       .selectExpr ( "CAST(value AS STRING)", "CAST(timestamp AS timestamp)" )
-      //.withWatermark("timestamp", "30 seconds")
+      .withWatermark ( "timestamp", "30 seconds" )
       .as [ (String, String) ]
 
+    lines.printSchema ( )
     lines.createOrReplaceTempView ( "stream_dataset" )
-    spark.sql ( s"SELECT word, count(1) AS wc FROM (select explode(split(value, '$delim')) as word from stream_dataset) group by word order by word" ).as [ WordCount ]
+
+    spark.sql ( s"SELECT word, win, count(1) AS wc FROM (select explode(split(value, '$delim')) as word, window(timestamp, '1 minutes', '1 minutes') win from stream_dataset) group by word, win" ).as [ WordCount ]
   }
 
-  /**
-    * @deprecated Not Working
-    */
   def countWordSave(spark: SparkSession, bootstrapServers: String, subscribeType: String, topics: String, checkpointLocation: String, pathOut: String, delim: String = StringUtils.SPACE): Unit = {
     // Start running the query that sends the running counts to the handler
+    //*** Data source json/csv does not support Complete output mode;
+    //*** Sorting is not supported on streaming DataFrames/Datasets, unless it is on aggregated DataFrame/Dataset in Complete output mode;
     val query = countWord ( spark, bootstrapServers, subscribeType, topics, delim ).writeStream
       .outputMode ( Append )
       .option ( "checkpointLocation", checkpointLocation )
       .format ( "json" ) // can be "orc", "json", "csv", etc.
       .option ( "path", pathOut )
+      .start ( )
+
+    query.awaitTermination ( )
+  }
+
+  def countWordBatch(spark: SparkSession, bootstrapServers: String, subscribeType: String, topics: String, checkpointLocation: String, delim: String = StringUtils.SPACE)(handler: WordCountHandler): Unit = {
+    import spark.implicits._
+
+    // Start running the query that sends the running counts to the handler
+    val query = countWord ( spark, bootstrapServers, subscribeType, topics, delim ).writeStream
+      .outputMode ( Complete ( ) )
+      .option ( "checkpointLocation", checkpointLocation )
+      .foreachBatch ( (batchDF: Dataset[ WordCount ], batchId: Long) => {
+        handler ( batchDF.sort ( $"word" ), batchId )
+      } )
       .start ( )
 
     query.awaitTermination ( )
