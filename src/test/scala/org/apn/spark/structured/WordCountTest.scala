@@ -1,11 +1,12 @@
 package org.apn.spark.structured
 
 import net.manub.embeddedkafka.{EmbeddedKafka, EmbeddedKafkaConfig}
-import org.scalatest.WordSpec
+import org.scalatest.{Ignore, WordSpec}
 
 /**
   * @author amit.nema
   */
+@Ignore
 class WordCountTest extends WordSpec with EmbeddedKafka {
 
   "runs with embedded kafka" should {
