@@ -42,7 +42,7 @@ to run a single instance demo.
     $ # IF YOU ARE USING WINDOWS, USE `.bat` IN PLACE OF `.sh` FOR THE LAUNCH SCRIPTS BELLOW:
     $ ./bin/kafka-topics.sh --zookeeper localhost --create --topic topicname --replication-factor 1 --partitions 4
  
-## Build the executable demo app
+## Build the Spark-Coach
 
 In another terminal `cd` into the directory where you have cloned the `spark-coach` project and use provided
 maven to create archive.
