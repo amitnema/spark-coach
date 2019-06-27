@@ -8,14 +8,17 @@ import org.apache.spark.sql.expressions.scalalang.typed
 /**
   *
   * Analyze the students result data and aggregate the marks filtered by threshold to pass the exam.
+  * Data sets are given below from example.
+  * <br />
+  * <br />
   * <table cellpadding="5" cellspacing="0">
   * <caption style="border: solid thin;">Result</caption>
   * <tr>
   * <th style="border: solid thin;">ID</th>
-  * <th style="border: solid thin;">Student name</th>
-  * <th style="border: solid thin;">Exam name</th>
-  * <th style="border: solid thin;">Exam date</th>
-  * <th style="border: solid thin;">Exam points</th>
+  * <th style="border: solid thin;">Student Name</th>
+  * <th style="border: solid thin;">Exam Name</th>
+  * <th style="border: solid thin;">Exam Date</th>
+  * <th style="border: solid thin;">Exam Points</th>
   * </tr>
   * <tr>
   * <td style="border: solid thin;">1</td>
@@ -25,14 +28,33 @@ import org.apache.spark.sql.expressions.scalalang.typed
   * <td style="border: solid thin;">67</td>
   * </tr>
   * </table>
+  * <br />
+  * <table cellpadding="5" cellspacing="0">
+  * <caption style="border: solid thin;">Course</caption>
+  * <tr>
+  * <th style="border: solid thin;">ID</th>
+  * <th style="border: solid thin;">Course name</th>
+  * <th style="border: solid thin;">Max Points</th>
+  * <th style="border: solid thin;">Min Points</th>
+  * </tr>
+  * <tr>
+  * <td style="border: solid thin;">1</td>
+  * <td style="border: solid thin;">Mathematics</td>
+  * <td style="border: solid thin;">100</td>
+  * <td style="border: solid thin;">40</td>
+  * </tr>
+  * </table>
   *
-  * Threshold = 40 [Marks required to pass the exam in a individual subject]
+  *
+  * problem statements:
+  * 1. Percentage of each passed students.
+  * 2. Names and Subject of the failed students
   *
   * @author Amit Nema
   */
 object ResultsAnalysis {
 
-  def aggregateResult(spark: SparkSession, resultPath: String, coursePath: String) = {
+  def aggregateResult(spark: SparkSession, resultPath: String, coursePath: String): Dataset[ Row ] = {
     import spark.implicits._
 
     val resultDS = readCSV ( resultPath )( spark, Encoders.product [ Result ] )

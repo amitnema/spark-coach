@@ -1,4 +1,4 @@
-ID ,Student name       ,Course ID,Exam date ,Exam points
+ID ,Student Name       ,Course ID,Exam Date ,Exam Points
 1  ,James Walker       ,1        ,5/6/2016  ,31
 2  ,Velma Clemons      ,1        ,5/6/2016  ,43
 2  ,Velma Clemons      ,6        ,5/6/2016  ,55
@@ -202,7 +202,7 @@ ID ,Student name       ,Course ID,Exam date ,Exam points
 200,Stacy Small        ,6        ,21/06/2016,96
 1  ,James Walker       ,6        ,5/6/2016  ,45
 2  ,Velma Clemons      ,2        ,5/6/2016  ,65
-2  ,Velma Clemons      ,5        ,5/6/2016  ,32
+2  ,Velma Clemons      ,5        ,5/6/2016  ,49
 3  ,Kibo Underwood     ,6        ,5/6/2016  ,19
 4  ,Louis Mcgee        ,6        ,5/6/2016  ,54
 5  ,Phyllis Paul       ,6        ,5/6/2016  ,68

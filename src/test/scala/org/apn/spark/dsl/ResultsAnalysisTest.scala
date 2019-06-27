@@ -5,7 +5,8 @@ import org.testng.annotations.{DataProvider, Test}
 
 class ResultsAnalysisTest extends SparkTestNGBase {
 
-  @DataProvider def dpResultAnalysis() = {
+  @DataProvider
+  def dpResultAnalysis(): Array[ Array[ Object ] ] = {
     Array ( Array [ Object ](
       getClass.getClassLoader.getResource ( "exam_result.csv" ).getPath,
       getClass.getClassLoader.getResource ( "course.csv" ).getPath
@@ -13,13 +14,19 @@ class ResultsAnalysisTest extends SparkTestNGBase {
     )
   }
 
-  @Test ( dataProvider = "dpResultAnalysis" ) def testAggregateResult(resultPathIn: String, coursePathIn: String) {
+  @Test ( dataProvider = "dpResultAnalysis" )
+  def testAggregateResult(resultPathIn: String, coursePathIn: String): Unit = {
     val ds = ResultsAnalysis.aggregateResult ( spark, resultPathIn, coursePathIn )
     import org.apache.spark.sql.functions._
-    ds.
-    filter ( col ( "id" ) === 2 ).
-    select ( "percentage" ).
-    collect ( )( 0 ).
-    get ( 0 ) should be ( 60.57142857142858 )
+    //Failed candidate
+    ds
+    .filter ( col ( "id" ) === 1 )
+    .isEmpty should be ( true )
+    //passed candidate percentage check
+    ds
+    .filter ( col ( "id" ) === 2 )
+    .select ( "percentage" )
+    .head ( )
+    .getDouble ( 0 ) should be ( 60.57142857142858 )
   }
 }
