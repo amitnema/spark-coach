@@ -2,7 +2,8 @@ package org.apn.spark.dsl
 
 import java.sql.Date
 
-import org.apache.spark.sql.{Dataset, Encoders, Row, SparkSession}
+import org.apache.spark.sql._
+import org.apache.spark.sql.expressions.scalalang.typed
 
 /**
   *
@@ -31,36 +32,43 @@ import org.apache.spark.sql.{Dataset, Encoders, Row, SparkSession}
   */
 object ResultsAnalysis {
 
-  def aggregateResult(spark: SparkSession, resultPath: String, threshold: Int): Dataset[Row] = {
-    import org.apache.spark.sql.expressions.scalalang._
+  def aggregateResult(spark: SparkSession, resultPath: String, coursePath: String) = {
     import spark.implicits._
-    readCSV ( spark, resultPath ).
-    groupByKey ( _.id ).
+
+    val resultDS = readCSV ( resultPath )( spark, Encoders.product [ Result ] )
+    val courseDS = readCSV ( coursePath )( spark, Encoders.product [ Course ] )
+
+    resultDS.joinWith ( courseDS, resultDS ( "courseId" ).equalTo ( courseDS ( "id" ) ) ).
+    groupByKey ( _._1.id ).
     mapGroups { case (id, itr) =>
       val list = itr.toList
-      (id, list, list.forall ( _.examPoints > threshold ))
+      (id, list, list.forall ( x => x._1.examPoints > x._2.markMin ))
     }.
     filter ( _._3 ).
     flatMap ( _._2 ).
-    groupByKey ( _.id ).
-    agg ( typed.sum [ Result ]( _.examPoints ) ).
-    toDF ( "id", "examPoints" ).
+    groupByKey ( _._1.id ).
+    agg ( typed.sum ( _._1.examPoints ), typed.sum ( _._2.markMax ) ).
+    toDF ( "id", "examPoints", "maxMarks" ).
+    select ( $"id", $"examPoints", $"maxMarks", $"examPoints" / $"maxMarks" * 100 ).
+    withColumnRenamed ( "((examPoints / maxMarks) * 100)", "percentage" ).
     orderBy ( 'id )
   }
 
-  private def readCSV(spark: SparkSession, csvPath: String) = {
-    import spark.implicits._
+  private def readCSV[ T ](path: String)(implicit spark: SparkSession, encoder: Encoder[ T ]): Dataset[ T ] = {
     spark.read
-    .option ( "header", "true" )
-    .option ( "inferSchema", "true" )
+    .option ( "header", true )
+    .option ( "inferSchema", false )
     .option ( "ignoreLeadingWhiteSpace", true )
     .option ( "ignoreTrailingWhiteSpace", true )
-    .option ( "nullValue", "null" )
+    .option ( "nullValue", null )
+    // .option ( "mode", "DROPMALFORMED" )
     .option ( "dateFormat", "dd/MM/yyyy" )
-    .schema ( Encoders.product [ Result ].schema )
-    .csv ( csvPath )
-    .as [ Result ]
+    .schema ( encoder.schema )
+    .csv ( path )
+    .as [ T ]
   }
 }
 
-case class Result(id: Int, studentName: String, examName: String, examDate: Date, examPoints: Int)
+case class Result(id: Int, studentName: String, courseId: Int, examDate: Date, examPoints: Int)
+
+case class Course(id: Int, courseName: String, markMax: Int, markMin: Int)

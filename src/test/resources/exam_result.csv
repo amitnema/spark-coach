@@ -1,208 +1,208 @@
-ID ,Student name       ,Exam name  ,Exam date ,Exam points
-1  ,James Walker       ,Biology    ,5/6/2016  ,31
-2  ,Velma Clemons      ,Biology    ,5/6/2016  ,43
-2  ,Velma Clemons      ,Sociology  ,5/6/2016  ,55
-3  ,Kibo Underwood     ,Biology    ,5/6/2016  ,81
-4  ,Louis Mcgee        ,Biology    ,5/6/2016  ,11
-5  ,Phyllis Paul       ,Biology    ,5/6/2016  ,18
-6  ,Zenaida Decker     ,Biology    ,5/6/2016  ,55
-7  ,Gillian Tillman    ,Biology    ,5/6/2016  ,38
-8  ,Constance Boone    ,Biology    ,5/6/2016  ,16
-9  ,Giselle Lancaster  ,Biology    ,5/6/2016  ,73
-10 ,Kirsten Mcdowell   ,Biology    ,5/6/2016  ,16
-11 ,Solomon Ray        ,Biology    ,5/6/2016  ,23
-12 ,John Marshall      ,Biology    ,5/6/2016  ,55
-13 ,Merrill Carney     ,Biology    ,5/6/2016  ,71
-14 ,Hakeem Gillespie   ,Biology    ,5/6/2016  ,12
-15 ,Hayden Boyer       ,Biology    ,5/6/2016  ,77
-16 ,Griffin Mcleod     ,Biology    ,5/6/2016  ,19
-17 ,Allistair Patton   ,Biology    ,5/6/2016  ,57
-18 ,Rina Slater        ,Biology    ,5/6/2016  ,78
-19 ,Caldwell Skinner   ,Biology    ,5/6/2016  ,92
-20 ,Portia Galloway    ,Biology    ,5/6/2016  ,23
-21 ,Noelle Valentine   ,Biology    ,5/6/2016  ,62
-22 ,Abel Clay          ,Biology    ,5/6/2016  ,1
-23 ,Stephanie Kent     ,Biology    ,5/6/2016  ,100
-24 ,Axel Petty         ,Biology    ,5/6/2016  ,49
-25 ,Nevada Morales     ,Biology    ,5/6/2016  ,41
-26 ,Fuller Bush        ,Biology    ,5/6/2016  ,47
-27 ,Quinn Mayo         ,Biology    ,5/6/2016  ,24
-28 ,Marcia Shepard     ,Biology    ,5/6/2016  ,33
-29 ,Kieran Moody       ,Biology    ,5/6/2016  ,45
-30 ,Brielle Thompson   ,Biology    ,5/6/2016  ,41
-31 ,Hashim Gay         ,Biology    ,5/6/2016  ,78
-32 ,Deborah Roberts    ,Biology    ,5/6/2016  ,25
-33 ,Nomlanga Clarke    ,Biology    ,5/6/2016  ,44
-34 ,Elaine Downs       ,Biology    ,5/6/2016  ,86
-35 ,Christen Ballard   ,Biology    ,5/6/2016  ,97
-36 ,Dacey Baxter       ,Biology    ,5/6/2016  ,35
-37 ,Nasim Sampson      ,Biology    ,5/6/2016  ,75
-38 ,Yoshi Sherman      ,Biology    ,5/6/2016  ,48
-39 ,Veda Malone        ,Chemistry  ,15/06/2016,52
-40 ,Scarlett Fisher    ,Chemistry  ,15/06/2016,20
-41 ,Meredith Parsons   ,Chemistry  ,15/06/2016,32
-42 ,Jerome Buckley     ,Chemistry  ,15/06/2016,19
-43 ,Jacob Foreman      ,Chemistry  ,15/06/2016,61
-44 ,Gisela Robertson   ,Chemistry  ,15/06/2016,34
-45 ,Sylvia Kent        ,Chemistry  ,15/06/2016,9
-46 ,Mercedes King      ,Chemistry  ,15/06/2016,22
-47 ,Logan Madden       ,Chemistry  ,15/06/2016,46
-48 ,Ryan Herman        ,Chemistry  ,15/06/2016,100
-49 ,Cora Frazier       ,Chemistry  ,15/06/2016,92
-50 ,Yolanda Carter     ,Chemistry  ,15/06/2016,1
-51 ,Hadassah Lowe      ,Chemistry  ,15/06/2016,84
-52 ,Ingrid Yang        ,Chemistry  ,15/06/2016,63
-53 ,Trevor Spence      ,Chemistry  ,15/06/2016,59
-54 ,Iola West          ,Chemistry  ,15/06/2016,61
-55 ,Kitra Sparks       ,Chemistry  ,15/06/2016,47
-56 ,Carly Bray         ,Chemistry  ,15/06/2016,27
-57 ,Leilani Beard      ,Chemistry  ,15/06/2016,99
-58 ,Cameron Bowen      ,Chemistry  ,15/06/2016,84
-59 ,Hilda Oneill       ,Chemistry  ,15/06/2016,95
-60 ,Ori Short          ,Chemistry  ,15/06/2016,50
-61 ,Xandra Cardenas    ,Chemistry  ,15/06/2016,27
-62 ,Audrey Todd        ,Chemistry  ,15/06/2016,39
-63 ,Ferdinand Lloyd    ,Chemistry  ,15/06/2016,71
-64 ,Kareem Mcdowell    ,Chemistry  ,15/06/2016,83
-65 ,Aaron Giles        ,Chemistry  ,15/06/2016,38
-66 ,Keefe Schneider    ,Mathematics,29/07/2016,48
-67 ,Kasper Ballard     ,Mathematics,29/07/2016,5
-68 ,Maris Turner       ,Mathematics,29/07/2016,7
-69 ,Ava Robertson      ,Mathematics,29/07/2016,70
-70 ,Gillian Benton     ,Mathematics,29/07/2016,73
-71 ,Dora Landry        ,Mathematics,29/07/2016,59
-72 ,Aimee Eaton        ,Mathematics,29/07/2016,23
-73 ,Iola Sutton        ,Mathematics,29/07/2016,72
-74 ,Jana Reed          ,Mathematics,29/07/2016,31
-75 ,Alfonso Love       ,Mathematics,29/07/2016,74
-76 ,Ciaran Mosley      ,Mathematics,29/07/2016,91
-77 ,Justin Evans       ,Mathematics,29/07/2016,53
-78 ,Ryder Combs        ,Mathematics,29/07/2016,56
-79 ,Nelle Skinner      ,Mathematics,29/07/2016,53
-80 ,Jakeem Rivera      ,Mathematics,29/07/2016,100
-81 ,Hyatt Long         ,Mathematics,29/07/2016,50
-82 ,Tanisha Stanton    ,Mathematics,29/07/2016,60
-83 ,Alec Pittman       ,Mathematics,29/07/2016,38
-84 ,Octavia Ashley     ,Mathematics,29/07/2016,33
-85 ,Curran Merrill     ,Mathematics,29/07/2016,75
-86 ,Laith Gibbs        ,Mathematics,29/07/2016,74
-87 ,Walter Skinner     ,Mathematics,29/07/2016,7
-88 ,Burke Horn         ,Mathematics,29/07/2016,6
-89 ,Alexander Walton   ,Mathematics,29/07/2016,40
-90 ,Cally Wilkinson    ,Mathematics,29/07/2016,14
-91 ,Gary Mcintosh      ,Mathematics,29/07/2016,16
-92 ,Jacob Greer        ,Mathematics,29/07/2016,31
-93 ,Fitzgerald Mueller ,Mathematics,29/07/2016,72
-94 ,Claire Roberts     ,Mathematics,29/07/2016,48
-95 ,Kuame Harrell      ,Mathematics,29/07/2016,53
-96 ,Kaseem Hurst       ,Mathematics,29/07/2016,67
-97 ,Irene Witt         ,Mathematics,29/07/2016,23
-98 ,Courtney Nash      ,Mathematics,29/07/2016,90
-99 ,Lane Torres        ,Mathematics,29/07/2016,87
-100,Jonas Vinson       ,Mathematics,29/07/2016,40
-101,Burton Holden      ,Mathematics,29/07/2016,26
-102,Connor Shaw        ,Mathematics,29/07/2016,51
-103,Calvin Riddle      ,Philosophy ,2/6/2016  ,35
-104,Tara Mendez        ,Philosophy ,2/6/2016  ,66
-105,Myra Wall          ,Philosophy ,2/6/2016  ,29
-106,Pandora Orr        ,Philosophy ,2/6/2016  ,91
-107,Stuart Crawford    ,Philosophy ,2/6/2016  ,63
-108,Winter Mendez      ,Philosophy ,2/6/2016  ,16
-109,Elijah Goff        ,Philosophy ,2/6/2016  ,10
-110,Chiquita Gilmore   ,Philosophy ,2/6/2016  ,23
-111,Eleanor Gregory    ,Philosophy ,2/6/2016  ,72
-112,Justine Soto       ,Philosophy ,2/6/2016  ,93
-113,Stuart Mcdaniel    ,Philosophy ,2/6/2016  ,10
-114,Shaeleigh Dunlap   ,Philosophy ,2/6/2016  ,99
-115,Lesley Bolton      ,Philosophy ,2/6/2016  ,67
-116,Shellie Davis      ,Philosophy ,2/6/2016  ,81
-117,Tarik Jarvis       ,Philosophy ,2/6/2016  ,40
-118,Adria Ball         ,Philosophy ,2/6/2016  ,23
-119,Daryl Tillman      ,Philosophy ,2/6/2016  ,65
-120,Magee Tate         ,Philosophy ,2/6/2016  ,24
-121,Jordan Beasley     ,Philosophy ,2/6/2016  ,62
-122,Dalton Becker      ,Philosophy ,2/6/2016  ,41
-123,Derek Burnett      ,Philosophy ,2/6/2016  ,42
-124,Halla Little       ,Philosophy ,2/6/2016  ,8
-125,Lani Pate          ,Philosophy ,2/6/2016  ,91
-126,Moses Chang        ,Philosophy ,2/6/2016  ,69
-127,Travis Weeks       ,Philosophy ,2/6/2016  ,47
-128,Nichole Ortega     ,Philosophy ,2/6/2016  ,0
-129,Hasad Berger       ,Philosophy ,2/6/2016  ,42
-130,Galvin Hall        ,Philosophy ,2/6/2016  ,65
-131,Kieran English     ,Philosophy ,2/6/2016  ,42
-132,Ella Dunn          ,Philosophy ,2/6/2016  ,32
-133,Jermaine Roman     ,Philosophy ,2/6/2016  ,33
-134,Chadwick Armstrong ,Philosophy ,2/6/2016  ,4
-135,Rhonda Ellis       ,Philosophy ,2/6/2016  ,27
-136,Ezra Brooks        ,Philosophy ,2/6/2016  ,56
-137,Jessamine Trevino  ,Philosophy ,2/6/2016  ,36
-138,Chaim Garrison     ,Philosophy ,2/6/2016  ,51
-139,Bo Leonard         ,Philosophy ,2/6/2016  ,71
-140,May Christian      ,Philosophy ,2/6/2016  ,52
-141,Ashton Nicholson   ,Physics    ,10/6/2016 ,69
-142,Solomon Rollins    ,Physics    ,10/6/2016 ,95
-143,Wesley Jacobson    ,Physics    ,10/6/2016 ,33
-144,Laura Gomez        ,Physics    ,10/6/2016 ,76
-145,Cora Fuentes       ,Physics    ,10/6/2016 ,20
-146,Deirdre Flowers    ,Physics    ,10/6/2016 ,10
-147,Yen Rutledge       ,Physics    ,10/6/2016 ,67
-148,Vladimir Delgado   ,Physics    ,10/6/2016 ,80
-149,Hedley Brewer      ,Physics    ,10/6/2016 ,22
-150,Lillian Massey     ,Physics    ,10/6/2016 ,8
-151,MacKensie Lopez    ,Physics    ,10/6/2016 ,100
-152,Raja Conley        ,Physics    ,10/6/2016 ,49
-153,Xavier Coffey      ,Physics    ,10/6/2016 ,70
-154,Ian Sawyer         ,Physics    ,10/6/2016 ,86
-155,Branden Hansen     ,Physics    ,10/6/2016 ,15
-156,Yoshio Schultz     ,Physics    ,10/6/2016 ,95
-157,Jamal Mercado      ,Physics    ,10/6/2016 ,67
-158,Ishmael Zamora     ,Physics    ,10/6/2016 ,20
-159,Kristen Potter     ,Physics    ,10/6/2016 ,31
-160,Unity Rodriquez    ,Physics    ,10/6/2016 ,48
-161,Mia Barry          ,Physics    ,10/6/2016 ,26
-162,Vincent Byers      ,Sociology  ,21/06/2016,70
-163,Rogan Edwards      ,Sociology  ,21/06/2016,37
-164,Darrel Wallace     ,Sociology  ,21/06/2016,68
-165,Colin Adkins       ,Sociology  ,21/06/2016,60
-166,Hop Cantu          ,Sociology  ,21/06/2016,98
-167,Nita Valdez        ,Sociology  ,21/06/2016,20
-168,Georgia Gomez      ,Sociology  ,21/06/2016,32
-169,Shannon Fields     ,Sociology  ,21/06/2016,40
-170,Jennifer Keith     ,Sociology  ,21/06/2016,97
-171,Keane Cox          ,Sociology  ,21/06/2016,1
-172,Sage Foster        ,Sociology  ,21/06/2016,6
-173,Ezra Hoover        ,Sociology  ,21/06/2016,39
-174,Burton Burke       ,Sociology  ,21/06/2016,68
-175,Preston Barrera    ,Sociology  ,21/06/2016,37
-176,Octavia Monroe     ,Sociology  ,21/06/2016,37
-177,Kirestin Sweet     ,Sociology  ,21/06/2016,90
-178,Octavius Chambers  ,Sociology  ,21/06/2016,38
-179,Grady Decker       ,Sociology  ,21/06/2016,87
-180,Jenette Humphrey   ,Sociology  ,21/06/2016,45
-181,Hayley Hull        ,Sociology  ,21/06/2016,73
-182,Mohammad Cantrell  ,Sociology  ,21/06/2016,36
-183,Alma Richmond      ,Sociology  ,21/06/2016,35
-184,Galena Mayer       ,Sociology  ,21/06/2016,85
-185,Reese Black        ,Sociology  ,21/06/2016,7
-186,Phillip Ward       ,Sociology  ,21/06/2016,67
-187,Priscilla Higgins  ,Sociology  ,21/06/2016,80
-188,Yael Trujillo      ,Sociology  ,21/06/2016,55
-189,Demetrius Castaneda,Sociology  ,21/06/2016,83
-190,Todd Dillard       ,Sociology  ,21/06/2016,67
-191,Noelle Marsh       ,Sociology  ,21/06/2016,27
-192,Akeem Chan         ,Sociology  ,21/06/2016,94
-193,Victoria Long      ,Sociology  ,21/06/2016,96
-194,Brooke Zimmerman   ,Sociology  ,21/06/2016,99
-195,Cadman Greene      ,Sociology  ,21/06/2016,64
-196,Yen Bowers         ,Sociology  ,21/06/2016,52
-197,Ryan Pena          ,Sociology  ,21/06/2016,16
-198,Portia Hamilton    ,Sociology  ,21/06/2016,34
-199,Sydnee Chambers    ,Sociology  ,21/06/2016,76
-200,Stacy Small        ,Sociology  ,21/06/2016,96
-1  ,James Walker       ,Sociology  ,5/6/2016  ,45
-2  ,Velma Clemons      ,Sociology  ,5/6/2016  ,65
-2  ,Velma Clemons      ,Sociology  ,5/6/2016  ,32
-3  ,Kibo Underwood     ,Sociology  ,5/6/2016  ,19
-4  ,Louis Mcgee        ,Sociology  ,5/6/2016  ,54
-5  ,Phyllis Paul       ,Sociology  ,5/6/2016  ,68
+ID ,Student name       ,Course ID,Exam date ,Exam points
+1  ,James Walker       ,1        ,5/6/2016  ,31
+2  ,Velma Clemons      ,1        ,5/6/2016  ,43
+2  ,Velma Clemons      ,6        ,5/6/2016  ,55
+3  ,Kibo Underwood     ,1        ,5/6/2016  ,81
+4  ,Louis Mcgee        ,1        ,5/6/2016  ,11
+5  ,Phyllis Paul       ,1        ,5/6/2016  ,18
+6  ,Zenaida Decker     ,1        ,5/6/2016  ,55
+7  ,Gillian Tillman    ,1        ,5/6/2016  ,38
+8  ,Constance Boone    ,1        ,5/6/2016  ,16
+9  ,Giselle Lancaster  ,1        ,5/6/2016  ,73
+10 ,Kirsten Mcdowell   ,1        ,5/6/2016  ,16
+11 ,Solomon Ray        ,1        ,5/6/2016  ,23
+12 ,John Marshall      ,1        ,5/6/2016  ,55
+13 ,Merrill Carney     ,1        ,5/6/2016  ,71
+14 ,Hakeem Gillespie   ,1        ,5/6/2016  ,12
+15 ,Hayden Boyer       ,1        ,5/6/2016  ,77
+16 ,Griffin Mcleod     ,1        ,5/6/2016  ,19
+17 ,Allistair Patton   ,1        ,5/6/2016  ,57
+18 ,Rina Slater        ,1        ,5/6/2016  ,78
+19 ,Caldwell Skinner   ,1        ,5/6/2016  ,92
+20 ,Portia Galloway    ,1        ,5/6/2016  ,23
+21 ,Noelle Valentine   ,1        ,5/6/2016  ,62
+22 ,Abel Clay          ,1        ,5/6/2016  ,1
+23 ,Stephanie Kent     ,1        ,5/6/2016  ,100
+24 ,Axel Petty         ,1        ,5/6/2016  ,49
+25 ,Nevada Morales     ,1        ,5/6/2016  ,41
+26 ,Fuller Bush        ,1        ,5/6/2016  ,47
+27 ,Quinn Mayo         ,1        ,5/6/2016  ,24
+28 ,Marcia Shepard     ,1        ,5/6/2016  ,33
+29 ,Kieran Moody       ,1        ,5/6/2016  ,45
+30 ,Brielle Thompson   ,1        ,5/6/2016  ,41
+31 ,Hashim Gay         ,1        ,5/6/2016  ,78
+32 ,Deborah Roberts    ,1        ,5/6/2016  ,25
+33 ,Nomlanga Clarke    ,1        ,5/6/2016  ,44
+34 ,Elaine Downs       ,1        ,5/6/2016  ,86
+35 ,Christen Ballard   ,1        ,5/6/2016  ,97
+36 ,Dacey Baxter       ,1        ,5/6/2016  ,35
+37 ,Nasim Sampson      ,1        ,5/6/2016  ,75
+38 ,Yoshi Sherman      ,1        ,5/6/2016  ,48
+39 ,Veda Malone        ,2        ,15/06/2016,52
+40 ,Scarlett Fisher    ,2        ,15/06/2016,20
+41 ,Meredith Parsons   ,2        ,15/06/2016,32
+42 ,Jerome Buckley     ,2        ,15/06/2016,19
+43 ,Jacob Foreman      ,2        ,15/06/2016,61
+44 ,Gisela Robertson   ,2        ,15/06/2016,34
+45 ,Sylvia Kent        ,2        ,15/06/2016,9
+46 ,Mercedes King      ,2        ,15/06/2016,22
+47 ,Logan Madden       ,2        ,15/06/2016,46
+48 ,Ryan Herman        ,2        ,15/06/2016,100
+49 ,Cora Frazier       ,2        ,15/06/2016,92
+50 ,Yolanda Carter     ,2        ,15/06/2016,1
+51 ,Hadassah Lowe      ,2        ,15/06/2016,84
+52 ,Ingrid Yang        ,2        ,15/06/2016,63
+53 ,Trevor Spence      ,2        ,15/06/2016,59
+54 ,Iola West          ,2        ,15/06/2016,61
+55 ,Kitra Sparks       ,2        ,15/06/2016,47
+56 ,Carly Bray         ,2        ,15/06/2016,27
+57 ,Leilani Beard      ,2        ,15/06/2016,99
+58 ,Cameron Bowen      ,2        ,15/06/2016,84
+59 ,Hilda Oneill       ,2        ,15/06/2016,95
+60 ,Ori Short          ,2        ,15/06/2016,50
+61 ,Xandra Cardenas    ,2        ,15/06/2016,27
+62 ,Audrey Todd        ,2        ,15/06/2016,39
+63 ,Ferdinand Lloyd    ,2        ,15/06/2016,71
+64 ,Kareem Mcdowell    ,2        ,15/06/2016,83
+65 ,Aaron Giles        ,2        ,15/06/2016,38
+66 ,Keefe Schneider    ,3        ,29/07/2016,48
+67 ,Kasper Ballard     ,3        ,29/07/2016,5
+68 ,Maris Turner       ,3        ,29/07/2016,7
+69 ,Ava Robertson      ,3        ,29/07/2016,70
+70 ,Gillian Benton     ,3        ,29/07/2016,73
+71 ,Dora Landry        ,3        ,29/07/2016,59
+72 ,Aimee Eaton        ,3        ,29/07/2016,23
+73 ,Iola Sutton        ,3        ,29/07/2016,72
+74 ,Jana Reed          ,3        ,29/07/2016,31
+75 ,Alfonso Love       ,3        ,29/07/2016,74
+76 ,Ciaran Mosley      ,3        ,29/07/2016,91
+77 ,Justin Evans       ,3        ,29/07/2016,53
+78 ,Ryder Combs        ,3        ,29/07/2016,56
+79 ,Nelle Skinner      ,3        ,29/07/2016,53
+80 ,Jakeem Rivera      ,3        ,29/07/2016,100
+81 ,Hyatt Long         ,3        ,29/07/2016,50
+82 ,Tanisha Stanton    ,3        ,29/07/2016,60
+83 ,Alec Pittman       ,3        ,29/07/2016,38
+84 ,Octavia Ashley     ,3        ,29/07/2016,33
+85 ,Curran Merrill     ,3        ,29/07/2016,75
+86 ,Laith Gibbs        ,3        ,29/07/2016,74
+87 ,Walter Skinner     ,3        ,29/07/2016,7
+88 ,Burke Horn         ,3        ,29/07/2016,6
+89 ,Alexander Walton   ,3        ,29/07/2016,40
+90 ,Cally Wilkinson    ,3        ,29/07/2016,14
+91 ,Gary Mcintosh      ,3        ,29/07/2016,16
+92 ,Jacob Greer        ,3        ,29/07/2016,31
+93 ,Fitzgerald Mueller ,3        ,29/07/2016,72
+94 ,Claire Roberts     ,3        ,29/07/2016,48
+95 ,Kuame Harrell      ,3        ,29/07/2016,53
+96 ,Kaseem Hurst       ,3        ,29/07/2016,67
+97 ,Irene Witt         ,3        ,29/07/2016,23
+98 ,Courtney Nash      ,3        ,29/07/2016,90
+99 ,Lane Torres        ,3        ,29/07/2016,87
+100,Jonas Vinson       ,3        ,29/07/2016,40
+101,Burton Holden      ,3        ,29/07/2016,26
+102,Connor Shaw        ,3        ,29/07/2016,51
+103,Calvin Riddle      ,4        ,2/6/2016  ,35
+104,Tara Mendez        ,4        ,2/6/2016  ,66
+105,Myra Wall          ,4        ,2/6/2016  ,29
+106,Pandora Orr        ,4        ,2/6/2016  ,91
+107,Stuart Crawford    ,4        ,2/6/2016  ,63
+108,Winter Mendez      ,4        ,2/6/2016  ,16
+109,Elijah Goff        ,4        ,2/6/2016  ,10
+110,Chiquita Gilmore   ,4        ,2/6/2016  ,23
+111,Eleanor Gregory    ,4        ,2/6/2016  ,72
+112,Justine Soto       ,4        ,2/6/2016  ,93
+113,Stuart Mcdaniel    ,4        ,2/6/2016  ,10
+114,Shaeleigh Dunlap   ,4        ,2/6/2016  ,99
+115,Lesley Bolton      ,4        ,2/6/2016  ,67
+116,Shellie Davis      ,4        ,2/6/2016  ,81
+117,Tarik Jarvis       ,4        ,2/6/2016  ,40
+118,Adria Ball         ,4        ,2/6/2016  ,23
+119,Daryl Tillman      ,4        ,2/6/2016  ,65
+120,Magee Tate         ,4        ,2/6/2016  ,24
+121,Jordan Beasley     ,4        ,2/6/2016  ,62
+122,Dalton Becker      ,4        ,2/6/2016  ,41
+123,Derek Burnett      ,4        ,2/6/2016  ,42
+124,Halla Little       ,4        ,2/6/2016  ,8
+125,Lani Pate          ,4        ,2/6/2016  ,91
+126,Moses Chang        ,4        ,2/6/2016  ,69
+127,Travis Weeks       ,4        ,2/6/2016  ,47
+128,Nichole Ortega     ,4        ,2/6/2016  ,0
+129,Hasad Berger       ,4        ,2/6/2016  ,42
+130,Galvin Hall        ,4        ,2/6/2016  ,65
+131,Kieran English     ,4        ,2/6/2016  ,42
+132,Ella Dunn          ,4        ,2/6/2016  ,32
+133,Jermaine Roman     ,4        ,2/6/2016  ,33
+134,Chadwick Armstrong ,4        ,2/6/2016  ,4
+135,Rhonda Ellis       ,4        ,2/6/2016  ,27
+136,Ezra Brooks        ,4        ,2/6/2016  ,56
+137,Jessamine Trevino  ,4        ,2/6/2016  ,36
+138,Chaim Garrison     ,4        ,2/6/2016  ,51
+139,Bo Leonard         ,4        ,2/6/2016  ,71
+140,May Christian      ,4        ,2/6/2016  ,52
+141,Ashton Nicholson   ,5        ,10/6/2016 ,69
+142,Solomon Rollins    ,5        ,10/6/2016 ,95
+143,Wesley Jacobson    ,5        ,10/6/2016 ,33
+144,Laura Gomez        ,5        ,10/6/2016 ,76
+145,Cora Fuentes       ,5        ,10/6/2016 ,20
+146,Deirdre Flowers    ,5        ,10/6/2016 ,10
+147,Yen Rutledge       ,5        ,10/6/2016 ,67
+148,Vladimir Delgado   ,5        ,10/6/2016 ,80
+149,Hedley Brewer      ,5        ,10/6/2016 ,22
+150,Lillian Massey     ,5        ,10/6/2016 ,8
+151,MacKensie Lopez    ,5        ,10/6/2016 ,100
+152,Raja Conley        ,5        ,10/6/2016 ,49
+153,Xavier Coffey      ,5        ,10/6/2016 ,70
+154,Ian Sawyer         ,5        ,10/6/2016 ,86
+155,Branden Hansen     ,5        ,10/6/2016 ,15
+156,Yoshio Schultz     ,5        ,10/6/2016 ,95
+157,Jamal Mercado      ,5        ,10/6/2016 ,67
+158,Ishmael Zamora     ,5        ,10/6/2016 ,20
+159,Kristen Potter     ,5        ,10/6/2016 ,31
+160,Unity Rodriquez    ,5        ,10/6/2016 ,48
+161,Mia Barry          ,5        ,10/6/2016 ,26
+162,Vincent Byers      ,6        ,21/06/2016,70
+163,Rogan Edwards      ,6        ,21/06/2016,37
+164,Darrel Wallace     ,6        ,21/06/2016,68
+165,Colin Adkins       ,6        ,21/06/2016,60
+166,Hop Cantu          ,6        ,21/06/2016,98
+167,Nita Valdez        ,6        ,21/06/2016,20
+168,Georgia Gomez      ,6        ,21/06/2016,32
+169,Shannon Fields     ,6        ,21/06/2016,40
+170,Jennifer Keith     ,6        ,21/06/2016,97
+171,Keane Cox          ,6        ,21/06/2016,1
+172,Sage Foster        ,6        ,21/06/2016,6
+173,Ezra Hoover        ,6        ,21/06/2016,39
+174,Burton Burke       ,6        ,21/06/2016,68
+175,Preston Barrera    ,6        ,21/06/2016,37
+176,Octavia Monroe     ,6        ,21/06/2016,37
+177,Kirestin Sweet     ,6        ,21/06/2016,90
+178,Octavius Chambers  ,6        ,21/06/2016,38
+179,Grady Decker       ,6        ,21/06/2016,87
+180,Jenette Humphrey   ,6        ,21/06/2016,45
+181,Hayley Hull        ,6        ,21/06/2016,73
+182,Mohammad Cantrell  ,6        ,21/06/2016,36
+183,Alma Richmond      ,6        ,21/06/2016,35
+184,Galena Mayer       ,6        ,21/06/2016,85
+185,Reese Black        ,6        ,21/06/2016,7
+186,Phillip Ward       ,6        ,21/06/2016,67
+187,Priscilla Higgins  ,6        ,21/06/2016,80
+188,Yael Trujillo      ,6        ,21/06/2016,55
+189,Demetrius Castaneda,6        ,21/06/2016,83
+190,Todd Dillard       ,6        ,21/06/2016,67
+191,Noelle Marsh       ,6        ,21/06/2016,27
+192,Akeem Chan         ,6        ,21/06/2016,94
+193,Victoria Long      ,6        ,21/06/2016,96
+194,Brooke Zimmerman   ,6        ,21/06/2016,99
+195,Cadman Greene      ,6        ,21/06/2016,64
+196,Yen Bowers         ,6        ,21/06/2016,52
+197,Ryan Pena          ,6        ,21/06/2016,16
+198,Portia Hamilton    ,6        ,21/06/2016,34
+199,Sydnee Chambers    ,6        ,21/06/2016,76
+200,Stacy Small        ,6        ,21/06/2016,96
+1  ,James Walker       ,6        ,5/6/2016  ,45
+2  ,Velma Clemons      ,2        ,5/6/2016  ,65
+2  ,Velma Clemons      ,5        ,5/6/2016  ,32
+3  ,Kibo Underwood     ,6        ,5/6/2016  ,19
+4  ,Louis Mcgee        ,6        ,5/6/2016  ,54
+5  ,Phyllis Paul       ,6        ,5/6/2016  ,68
